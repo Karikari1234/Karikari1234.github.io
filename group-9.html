@@ -5,7 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Tale of Two Scholars - A Journey of Growth</title>
     <style>
-        /* ... (keeping the same CSS as before) ... */
+       body, html {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .author {
+            font-style: italic;
+            margin-top: 5px;
+        }
+        .content {
+            padding: 20px;
+        }
+        #story-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+        }
+        .highlight {
+            background-color: #e74c3c;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 3px;
+            cursor: help;
+            position: relative;
+        }
+        .tooltip {
+            visibility: hidden;
+            width: 200px;
+            background-color: #34495e;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -100px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .highlight:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
     </style>
 </head>
 <body>
@@ -39,7 +103,7 @@
 
     <script>
         function fetchPixabayImage() {
-            const apiKey = 'YOUR_PIXABAY_API_KEY'; // Replace with your actual Pixabay API key
+            const apiKey = '44707473-84c4c62d24a7a06b13f24544f'; // Replace with your actual Pixabay API key
             const query = 'village library'; // You can adjust this query to match your story's setting
             const apiUrl = `https://pixabay.com/api/?key=${apiKey}&q=${encodeURIComponent(query)}&image_type=photo`;
 
