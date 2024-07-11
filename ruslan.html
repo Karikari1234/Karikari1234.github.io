@@ -1,154 +1,272 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Ruslan Hossain's Meal & Supplement Plan</title>
-<style>
-body {
-font-family: 'Helvetica Neue', sans-serif;
-background-color: #f4f4f4;
-margin: 0;
-padding: 0;
-color: #333;
-}
-
-h2 {
-text-align: center;
-color: #333;
-padding: 20px 0;
-}
-
-table {
-width: 90%;
-margin: 20px auto;
-border-collapse: collapse;
-box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-background-color: #fff;
-}
-
-th, td {
-border: 1px solid #ddd;
-padding: 12px 15px;
-text-align: left;
-}
-
-th {
-background-color: #007bff; /* Elegant blue */
-color: white;
-font-weight: bold;
-}
-
-tr:nth-child(even) {
-background-color: #f9f9f9;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal and Supplement Plan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --background-color: #FFD700;
+            --card-color: #FF4500;
+            --text-color: #000000;
+            --light-text: #FFFFFF;
+            --accent-color: #FF8C00;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            color: var(--card-color);
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .plan-section {
+            background-color: var(--card-color);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .plan-section h2 {
+            color: var(--light-text);
+            border-bottom: 2px solid var(--light-text);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        
+        .meal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .meal-card {
+            background-color: var(--light-text);
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .meal-card h3 {
+            color: var(--card-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--accent-color);
+            padding-bottom: 5px;
+        }
+        
+        .meal-card ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .meal-card li {
+            margin-bottom: 5px;
+        }
+        
+        .vitamins {
+            background-color: var(--accent-color);
+            color: var(--light-text);
+            border-radius: 8px;
+            padding: 10px;
+            margin-top: 15px;
+        }
+        
+        .vitamins h4 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: var(--card-color);
+            color: var(--light-text);
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-
-<h2>Training Days</h2>
-
-<table>
-<tr>
-<th>Meal</th>
-<th>Food</th>
-<th>Vitamins & Supplements</th>
-<th>Notes</th>
-</tr>
-<tr>
-<td>Cardio</td>
-<td></td>
-<td></td>
-<td>45 mins, empty stomach</td>
-</tr>
-<tr>
-<td>1</td>
-<td>200g egg whites, 1 scoop whey, 1 tbsp almond butter, 100g veg</td>
-<td>Multivitamin, 2000mg omega 3, cyto greens/veggie greens, 500mg niacin, digestive enzyme, GDA, 2000mg astralagus, 2 liver care capsules, 200mcg chromium, 1000mg vitamin C, 5000iu vitamin D, 400iu vitamin E, 50mg zinc, 500mg berberine</td>
-<td>30ml apple cider vinegar with water</td>
-</tr>
-<tr>
-<td>2</td>
-<td>180g chicken breast (boiled), 100g green veg (boiled/steamed)</td>
-<td></td>
-<td>2 tbsp olive oil/almond butter, 1g Himalayan salt</td>
-</tr>
-<tr>
-<td>3 (Pre-workout)</td>
-<td>180g chicken/fish/turkey (boiled), 100g green veg (boiled/steamed), 200g cooked rice/sweet potato/potato</td>
-<td></td>
-<td>1 tsp olive oil, 1g Himalayan salt</td>
-</tr>
-<tr>
-<td>Pre-workout Drink</td>
-<td></td>
-<td>10g EAA, 5g citrulline, 3g arginine, 3g L-carnitine, 2g beta-alanine, 300mg magnesium</td>
-<td></td>
-</tr>
-<tr>
-<td>During Workout Drink</td>
-<td></td>
-<td>10g EAA, 10g BCAA, 500ml coconut water</td>
-<td></td>
-</tr>
-<tr>
-<td>Post-workout Shake</td>
-<td></td>
-<td>30g hydrolyzed whey, 5g creatine, 10g glutamine</td>
-<td></td>
-</tr>
-<tr>
-<td>4 (Post-workout)</td>
-<td>200g lean beef, 250g rice</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>5</td>
-<td>10 egg whites, 100g green veg</td>
-<td>2000mg omega 3, ZMA (3 capsules), digestive enzyme, multivitamin, 2000mg astralagus, 500mg citrus bergamot, 2 liver care capsules/250mg tudca, 50mg zinc, 600mg NAC, 1000mg GABA</td>
-<td>1g Himalayan salt</td>
-</tr>
-</table>
-
-<h2>Non-Training Days</h2>
-
-<table>
-<tr>
-<th>Meal</th>
-<th>Food</th>
-<th>Vitamins & Supplements</th>
-<th>Notes</th>
-</tr>
-<tr>
-<td>1</td>
-<td>200g egg whites, 1 scoop whey, 1 tbsp almond butter, 100g veg</td>
-<td>Same as training day Meal 1</td>
-<td>30ml apple cider vinegar with water</td>
-</tr>
-<tr>
-<td>2</td>
-<td>180g chicken breast (boiled), 100g green veg (boiled/steamed)</td>
-<td></td>
-<td>2 tbsp olive oil/almond butter, 1g Himalayan salt</td>
-</tr>
-<tr>
-<td>3 (Family meal)</td>
-<td></td>
-<td></td>
-<td>Don't overdo</td>
-</tr>
-<tr>
-<td>4</td>
-<td>200g lean beef, 100g green veg</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>5</td>
-<td>200g salmon, 100g green veg</td>
-<td>Same as training day Meal 5</td>
-<td></td>
-</tr>
-</table>
-
+    <div class="container">
+        <h1>Meal and Supplement Plan</h1>
+        
+        <div class="plan-section">
+            <h2>Training Days</h2>
+            <div class="meal-grid">
+                <div class="meal-card">
+                    <h3>Cardio</h3>
+                    <p>45 mins empty stomach</p>
+                </div>
+                
+                <div class="meal-card">
+                    <h3>Meal 1</h3>
+                    <ul>
+                        <li>30ml apple cider vinegar with water</li>
+                        <li>200g egg whites</li>
+                        <li>1 scoop whey</li>
+                        <li>1 tbs Almond butter</li>
+                        <li>1g himalyan salt</li>
+                        <li>100g veg</li>
+                    </ul>
+                    <div class="vitamins">
+                        <h4>Vitamins</h4>
+                        <p>multivitamin, 2000mg omega 3 fish oil, 1 scoop cyto greens or veggie greens, 1 500mg capsule niacin (full flush not flush free), 1 digestive enzyme, 1 GDA, 2000mg astralagus, 2 liver care capsules, 200mcg chromium, 1000mg vitamin C, 5000iu vitamin D, 400iu vitamin E, 50mg zinc, 500mg berberine</p>
+                    </div>
+                </div>
+                
+                <div class="meal-card">
+                    <h3>Meal 2</h3>
+                    <ul>
+                        <li>180g chicken breast (raw Measurement) (salt and pepper) boiled</li>
+                        <li>100g green veg (boiled or steamed)</li>
+                        <li>2 tbs Olive oil or almond butter</li>
+                        <li>1g himalyan salt</li>
+                    </ul>
+                </div>
+                
+                <div class="meal-card">
+                    <h3>Meal 3 (Pre-workout)</h3>
+                    <ul>
+                        <li>180g chicken/fish/turkey (raw measurement) (salt and pepper) boiled</li>
+                        <li>100g green veg (boiled or steamed)</li>
+                        <li>200g cooked rice/200g sweet potato or potato</li>
+                        <li>1 tsp olive oil</li>
+                        <li>1g himalyan salt</li>
+                    </ul>
+                </div>
+                
+                <div class="meal-card">
+                    <h3>Pre-workout Drink</h3>
+                    <ul>
+                        <li>10 grams of EAA</li>
+                        <li>5 grams of CITRULINE</li>
+                        <li>3 grams of ARGININE</li>
+                        <li>3 grams of L-CARNITINE</li>
+                        <li>2 grams of BETA-ALANINE</li>
+                        <li>300mg magnesium gluconate or glycinate</li>
+                    </ul>
+                </div>
+                
+                <div class="meal-card">
+                    <h3>During Workout Drink</h3>
+                    <ul>
+                        <li>10 grams of EAA</li>
+                        <li>10 grams of BCAA</li>
+                        <li>500ml coconut water</li>
+                    </ul>
+                </div>
+                
+                <div class="meal-card">
+                    <h3>Post-Workout Shake</h3>
+                    <ul>
+                        <li>30 grams of HYDROLYZED WHEY</li>
+                        <li>5 grams of CREATINE</li>
+                        <li>10 grams of GLUTAMINE</li>
+                    </ul>
+                </div>
+                
+                <div class="meal-card">
+                    <h3>Post-workout Meal 4</h3>
+                    <ul>
+                        <li>200g beef lean cut (raw measurement)</li>
+                        <li>250g rice</li>
+                    </ul>
+                </div>
+                
+                <div class="meal-card">
+                    <h3>Meal 5</h3>
+                    <ul>
+                        <li>10 egg whites</li>
+                        <li>100g green veg</li>
+                        <li>1g himalyan salt</li>
+                    </ul>
+                    <div class="vitamins">
+                        <h4>Vitamins</h4>
+                        <p>2000mg omega 3 fish oil, ZMA dose (3 capsules), 1 digestive enzyme, 1 multivitamin, 2000mg astralagus, 500mg citrus bergamot, 2 liver care capsules or 250mg tudca, 50mg zinc, 600mg Nac, 1000mg Gaba</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="plan-section">
+            <h2>Non-Training Days</h2>
+            <div class="meal-grid">
+                <div class="meal-card">
+                    <h3>Meal 1</h3>
+                    <ul>
+                        <li>30ml apple cider vinegar with water</li>
+                        <li>200g egg whites</li>
+                        <li>1 scoop whey</li>
+                        <li>1 tbs Almond butter</li>
+                        <li>1g himalyan salt</li>
+                        <li>100g veg</li>
+                    </ul>
+                    <div class="vitamins">
+                        <h4>Vitamins</h4>
+                        <p>multivitamin, 2000mg omega 3 fish oil, 1 scoop cyto greens or veggie greens, 1 500mg capsule niacin (full flush not flush free), 1 digestive enzyme, 1 GDA, 2000mg astralagus, 2 liver care capsules, 200mcg chromium, 1000mg vitamin C, 5000iu vitamin D, 400iu vitamin E, 50mg zinc, 500mg berberine</p>
+                    </div>
+                </div>
+                
+                <div class="meal-card">
+                    <h3>Meal 2</h3>
+                    <ul>
+                        <li>180g chicken breast (raw Measurement) (salt and pepper) boiled</li>
+                        <li>100g green veg (boiled or steamed)</li>
+                        <li>2 tbs Olive oil or almond butter</li>
+                        <li>1g himalyan salt</li>
+                    </ul>
+                </div>
+                
+                <div class="meal-card">
+                    <h3>Meal 3</h3>
+                    <p>Family meal (don't overdo)</p>
+                </div>
+                
+                <div class="meal-card">
+                    <h3>Meal 4</h3>
+                    <ul>
+                        <li>200g beef lean cut</li>
+                        <li>100g green veg</li>
+                    </ul>
+                </div>
+                
+                <div class="meal-card">
+                    <h3>Meal 5</h3>
+                    <ul>
+                        <li>200g salmon</li>
+                        <li>100g green veg</li>
+                    </ul>
+                    <div class="vitamins">
+                        <h4>Vitamins</h4>
+                        <p>2000mg omega 3 fish oil, ZMA dose (3 capsules), 1 digestive enzyme, 1 multivitamin, 2000mg astralagus, 500mg citrus bergamot, 2 liver care capsules or 250mg tudca, 50mg zinc, 600mg Nac, 1000mg Gaba</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Ruslan Hossain</p>
+        <p>Fitness Consultant Ruslan's Studio</p>
+        <p>IFBB Athlete</p>
+    </footer>
 </body>
 </html>
